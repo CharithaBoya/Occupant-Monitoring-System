@@ -17,13 +17,19 @@ Prerequisites:
 Setup Instructions
 
 Step 1: Install Visual Studio Code (1.97.2)
+
 Step 2: Install required libraries: pip install bleak twilio
+
 Step 3: Create a folder named Health_Integration.
+
 Step 4: Inside the folder, add the following files:
            vehicle_dashboard.py
            dashboard.html
+           
 Step 5: Update your TWILIO CREDENTIALS in vehicle_dashboard.py.
+
 Step 6: Place the Heart Rate file in the same folder.
+
 Step 7: Run vehicle_dashboard.py file in the terminal.
 
 The system will start monitoring and send alerts if an emergency is detected.
