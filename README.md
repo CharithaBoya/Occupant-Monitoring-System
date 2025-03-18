@@ -8,7 +8,7 @@ This project monitors the occupant's health inside an autonomous vehicle by:
      The heart rate is abnormal (bpm < 70 or bpm > 110).
 
 Prerequisites: 
-1. Smartwatch (should support heart rate data export or real-time monitoring) 
+1. Smartwatch (should support heart rate data export or real-time monitoring)  
 2. Heart rate data source: HTML file exported from the smartwatch’s mobile application
 3. Twilio API account for sending emergency alerts.
 4. Twilio Credentials (replace these in vehicle_dashboard.py):
