@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Health Monitor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        #alert { font-size: 24px; color: red; font-weight: bold; margin-top: 20px; }
+        button { font-size: 20px; padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>🚗 Vehicle Health Monitoring</h1>
+    <p>Click the button to start monitoring</p>
+    <button onclick="startMonitoring()">🔘 Start Heart Rate Monitor</button>
+    <div id="alert"></div>
+
+    <script>
+        var socket = io();
+        
+        function startMonitoring() {
+            alert("Monitoring Started!");
+        }
+
+        socket.on("update_alert", function(msg) {
+            document.getElementById("alert").innerHTML = msg;
+        });
+    </script>
+</body>
+</html>
